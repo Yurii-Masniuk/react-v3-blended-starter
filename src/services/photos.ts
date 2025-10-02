@@ -7,12 +7,12 @@ axios.defaults.params = {
   orientation: "landscape",
 };
 
-// interface PexelResponse {
-//   photos: Photo[]
-// }
+interface PexelResponse {
+  photos: Photo[]
+}
 
 export const getPhotos = async (query: string, page: number) => {
-  const response = await axios.get(`search?query=${query}&page=${page}`);
+  const response = await axios.get<PexelResponse>(`search?query=${query}&page=${page}`);
 
   return response.data;
 };
