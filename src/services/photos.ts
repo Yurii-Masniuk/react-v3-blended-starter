@@ -8,7 +8,11 @@ axios.defaults.params = {
 };
 
 interface PexelResponse {
-  photos: Photo[]
+  photos: Photo[];
+  page: number;
+  per_page: number;
+  total_results: number;
+  next_page: string;
 }
 
 export const getPhotos = async (query: string, page: number) => {

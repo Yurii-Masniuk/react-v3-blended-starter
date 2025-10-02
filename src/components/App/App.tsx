@@ -9,7 +9,6 @@ import type { Photo } from '../../types/photo';
 import Loader from '../Loader/Loader';
 import Text from '../Text/Text';
 import PhotosGallery from '../PhotosGallery/PhotosGallery';
-// import Modal from '../Modal/Modal';
 import ImageModal from '../ImageModal/ImageModal';
 import Button from '../Button/Button';
 
